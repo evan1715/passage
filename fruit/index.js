@@ -1,4 +1,5 @@
 const chalk = require('chalk');
+chalk.level = 2;
 
 /*============================================
                 Fruit Bearers

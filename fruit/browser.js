@@ -5,7 +5,7 @@
 //Powdered fruit
 const banana = (title, body) => console.log(`%c${title}`, 'color: yellow', body && `: ${body}`);
 const blueberry = (title, body) => console.log(`%c${title}`, 'color: blue', body && `: ${body}`);
-const cherror = (title, body) => console.log(`%c${title} error:`, 'color: red', `${body}`);
+const cherror = (title, body) => console.log(`%c${title} error:`, 'color: red', body && body.toString());
 const cherry = (title, body) => console.log(`%c${title}`, 'color: red', body && `: ${body}`);
 const grape = (title, body) => console.log(`%c${title}`, 'color: magenta', body && `: ${body}`);
 const lime = (title, body) => console.log(`%c${title}`, 'color: lime', body && `: ${body}`);
@@ -28,7 +28,7 @@ const bgPear = (title, body) => console.log(`%c${title}`, 'background-color: gre
 const bgPlum = (title, body) => console.log(`%c${title}`, 'background-color: purple', body && `: ${body}`);
 const bgTeal = (title, body) => console.log(`%c${title}`, 'background-color: cyan', body && `: ${body}`);
 
-export default {
+module.exports = {
     banana,
     blueberry,
     cherror,
